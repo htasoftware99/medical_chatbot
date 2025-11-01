@@ -1,5 +1,6 @@
 mkdir -p src
 mkdir -p notebooks
+mkdir -p data
 
 touch src/__init__.py
 touch src/helper.py
