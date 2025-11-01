@@ -1,0 +1,171 @@
+/* === General Page Setup === */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d9f0ff 0%, #f2f9ff 100%);
+}
+
+/* === Chat Container === */
+.chat {
+    margin-top: 60px;
+}
+
+.card {
+    height: 80vh;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* === Header === */
+.msg_head {
+    background: linear-gradient(135deg, #00aaff 0%, #0077cc 100%);
+    color: white;
+    padding: 15px;
+    border-bottom: none;
+}
+
+.user_info span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user_info p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.img_cont {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+
+.user_img {
+    height: 45px;
+    width: 45px;
+    border: 2px solid #fff;
+}
+
+.online_icon {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    bottom: 3px;
+    right: 3px;
+    border: 1.5px solid white;
+}
+
+/* === Chat Body === */
+.msg_card_body {
+    overflow-y: auto;
+    background: #f8fbff;
+    padding: 20px;
+    scrollbar-width: thin;
+}
+
+.msg_card_body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.msg_card_body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* === Message Bubbles === */
+.msg_cotainer {
+    background-color: #e4f1ff;
+    border-radius: 15px 15px 15px 0;
+    padding: 10px 15px;
+    max-width: 75%;
+    font-size: 15px;
+    position: relative;
+    color: #333;
+}
+
+.msg_cotainer_send {
+    background-color: #0077cc;
+    color: white;
+    border-radius: 15px 15px 0 15px;
+    padding: 10px 15px;
+    max-width: 75%;
+    font-size: 15px;
+    position: relative;
+}
+
+/* === Message Time === */
+.msg_time, .msg_time_send {
+    position: absolute;
+    bottom: -18px;
+    right: 5px;
+    font-size: 11px;
+    color: #aaa;
+}
+
+/* === Message Images === */
+.img_cont_msg {
+    height: 40px;
+    width: 40px;
+}
+
+.user_img_msg {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1.5px solid #ccc;
+}
+
+/* === Footer (Input Area) === */
+.card-footer {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.type_msg {
+    border: none;
+    background-color: #f4f7fa;
+    border-radius: 25px;
+    padding: 10px 20px;
+    height: 45px;
+    font-size: 14px;
+    outline: none;
+}
+
+.type_msg:focus {
+    background-color: #eef5ff;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+}
+
+.send_btn {
+    border: none;
+    background: #0077cc;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.send_btn:hover {
+    background: #005fa3;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chat {
+        margin-top: 20px;
+    }
+
+    .card {
+        height: 90vh;
+    }
+
+    .msg_cotainer, .msg_cotainer_send {
+        font-size: 14px;
+    }
+}
