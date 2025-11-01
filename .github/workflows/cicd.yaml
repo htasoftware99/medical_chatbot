@@ -61,7 +61,6 @@ jobs:
           echo "Pulling latest image: $IMAGE_URI"
           docker pull $IMAGE_URI
 
-          # '|| true' komutu, konteyner bulunamazsa dahi pipeline'ın hata vermesini engeller
           echo "Stopping existing container: $CONTAINER_NAME"
           docker stop $CONTAINER_NAME || true
 
